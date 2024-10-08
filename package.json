@@ -1,12 +1,12 @@
 {
-  "name": "pear-toolkit",
-  "version": "1.0.3",
+  "name": "pear-kit",
+  "version": "0.0.9",
   "type": "module",
   "module": "./dist/es/index.js",
   "main": "./dist/lib/index.js",
   "scripts": {
     "build": "vite build",
-    "publish:pear-toolkit": "gulp -f publish/index.ts"
+    "publish": "gulp -f publish/index.ts"
   },
   "types": "./dist/es/index.d.ts",
   "devDependencies": {
@@ -25,9 +25,9 @@
   "keywords": [
     "Utils"
   ],
-  "homepage": "https://www.npmjs.com/package/pear-toolkit",
+  "homepage": "https://www.npmjs.com/package/pear-kit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pear1958/pear-toolkit"
+    "url": "https://github.com/pear1958/pear-kit"
   }
 }
