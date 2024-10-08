@@ -1,5 +1,5 @@
 {
-  "name": "pear-kit",
+  "name": "@pear/utils",
   "version": "0.0.9",
   "type": "module",
   "module": "./dist/es/index.js",
@@ -25,9 +25,9 @@
   "keywords": [
     "Utils"
   ],
-  "homepage": "https://www.npmjs.com/package/pear-kit",
+  "homepage": "https://www.npmjs.com/package/pear-utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pear1958/pear-kit"
+    "url": "https://github.com/pear1958/pear-utils"
   }
 }
