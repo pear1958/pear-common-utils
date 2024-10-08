@@ -12,3 +12,5 @@ Node v16.14.2
 ### to-do-list
 
 - [ ] 完善单元测试
+- [ ] 完善文档
+- [ ] 使用 rollup 替换 vite
