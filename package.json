@@ -6,7 +6,7 @@
   "main": "./dist/lib/index.js",
   "scripts": {
     "build": "vite build",
-    "release": "release-it"
+    "publish:pear-toolkit": "gulp -f publish/index.ts"
   },
   "types": "./dist/es/index.d.ts",
   "devDependencies": {
