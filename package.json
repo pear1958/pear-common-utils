@@ -1,5 +1,5 @@
 {
-  "name": "@pear/utils",
+  "name": "pear-common-utils",
   "version": "0.0.9",
   "type": "module",
   "module": "./dist/es/index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@pear/utils",
+  "name": "pear-common-utils",
   "version": "0.0.9",
   "module": "es/index.js",
   "main": "lib/index.js",
