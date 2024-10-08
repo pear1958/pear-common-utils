@@ -1,6 +1,6 @@
 {
-  "name": "pear-tools",
-  "version": "1.0.0",
+  "name": "pear-toolkit",
+  "version": "1.0.1",
   "type": "module",
   "module": "./dist/es/index.js",
   "main": "./dist/lib/index.js",
@@ -25,9 +25,9 @@
   "keywords": [
     "Utils"
   ],
-  "homepage": "https://www.npmjs.com/package/pear-tools",
+  "homepage": "https://www.npmjs.com/package/pear-toolkit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pear1958/pear-tools"
+    "url": "https://github.com/pear1958/pear-toolkit"
   }
 }
