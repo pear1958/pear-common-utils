@@ -1,0 +1,9 @@
+node_modules
+
+dist/es
+dist/lib
+
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+vite.config.ts.timestamp-*.mjs

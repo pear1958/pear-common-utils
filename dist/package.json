@@ -1,0 +1,24 @@
+{
+  "name": "pear-tools",
+  "module": "es/index.js",
+  "main": "lib/index.js",
+  "typings": "es/index.d.ts",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "release": "release-it"
+  },
+  "keywords": [
+    "pear-tools",
+    "工具库"
+  ],
+  "author": "zhangzy",
+  "description": "utils library",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z-pear/pear-tools"
+  }
+}
