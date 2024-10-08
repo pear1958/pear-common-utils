@@ -1,5 +1,6 @@
 {
   "name": "pear-tools",
+  "version": "1.0.0",
   "module": "es/index.js",
   "main": "lib/index.js",
   "typings": "es/index.d.ts",
