@@ -1,6 +1,6 @@
 {
   "name": "pear-common-utils",
-  "version": "0.0.9",
+  "version": "1.0.3",
   "type": "module",
   "module": "./dist/es/index.js",
   "main": "./dist/lib/index.js",

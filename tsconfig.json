@@ -39,6 +39,7 @@
     "src/**/*.d.ts",
     "types/**/*.d.ts",
     "types/**/*.ts",
+    "index.ts"
   ],
   // 指定编译器 要排除的、不编译的文件
   "exclude": [
