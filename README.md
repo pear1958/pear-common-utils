@@ -14,4 +14,3 @@ Node v16.14.2
 - [ ] 完善单元测试
 - [ ] 完善文档
 - [ ] 使用 rollup 替换 vite
-- [ ] 鼠标点击没有进到 .index.d.ts 而是进到了 lib/index.js
