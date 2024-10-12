@@ -31,7 +31,8 @@
         "src/*"
       ],
     },
-    "allowImportingTsExtensions": true
+    // 允许在导入 TypeScript 文件时指定文件扩展名（如 `.ts`, `.tsx`）, 当导入路径需要显式包含文件扩展名时, 确保兼容性
+    // "allowImportingTsExtensions": true
   },
   // 指定要编译的路径列表
   "include": [

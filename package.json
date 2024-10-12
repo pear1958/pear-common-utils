@@ -6,14 +6,18 @@
   "main": "./dist/lib/index.js",
   "scripts": {
     "build": "vite build",
+    "build-r": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "publish": "gulp -f publish/index.ts"
   },
   "types": "./dist/es/index.d.ts",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.0",
     "@types/gulp": "^4.0.17",
     "@types/node": "^22.7.0",
     "gulp": "^5.0.0",
     "release-it": "15.6.0",
+    "rollup": "^4.24.0",
+    "rollup-plugin-dts": "^6.1.1",
     "sucrase": "^3.35.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
@@ -25,10 +29,10 @@
   "keywords": [
     "Utils"
   ],
-  "homepage": "https://www.npmjs.com/package/pear-utils",
+  "homepage": "https://www.npmjs.com/package/pear-common-utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pear1958/pear-utils"
+    "url": "https://github.com/pear1958/pear-common-utils"
   },
   "dependencies": {
     "jszip": "^3.10.1"
