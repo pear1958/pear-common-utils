@@ -36,7 +36,7 @@ export default [
   },
   {
     input: "./types/global.d.ts",
-    output: [{ file: "dist/es/types/global.d.ts" }],
+    output: [{ file: "dist/es/types/global.d.ts" }, { file: "dist/lib/types/global.d.ts" }],
     plugins: [dts()],
   },
 ]
