@@ -2,6 +2,7 @@ import JSZip from 'jszip'
 // import { ElMessage } from 'element-plus'
 import { imgUrlToBase64, base64toBlob } from './base64Convert'
 import { downloadByBlob, getFileName } from './utils'
+import type { TargetContext } from "../../types/global"
 
 /**
  * 根据后台接口文件流下载

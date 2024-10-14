@@ -1,3 +1,5 @@
+import type { Nullable } from "../../types/global"
+
 /**
  * 图片的在线url转化为base64
  */

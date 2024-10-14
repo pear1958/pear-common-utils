@@ -1,4 +1,5 @@
 import { isEmpty } from "./is"
+import type { LabelValue } from "../types/global"
 
 export interface DictItem extends LabelValue {
   cls?: string

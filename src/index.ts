@@ -1,9 +1,11 @@
 import { isArray, isString } from "./is"
+import type { Recordable } from "../types/global"
 
 /**
  * 获取浏览器默认语言
  */
 export function getBrowserLang(): 'zh' | 'en' {
+  // @ts-ignore
   const browserLang = navigator.language ? navigator.language : navigator.browserLanguage
   return ['cn', 'zh', 'zh-cn'].includes(browserLang.toLowerCase()) ? 'zh' : 'en'
 }

@@ -1,4 +1,5 @@
 import { deepClone } from "."
+import type { Recordable } from "../types/global"
 
 /**
  * @description 扁平化数组对象, 他的key不剔除, 只是把所有key下的元素 提到第一级来

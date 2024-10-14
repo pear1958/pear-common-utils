@@ -1,3 +1,5 @@
+import type { TimeoutId } from "../../types/global"
+
 // 心跳基类
 export class Heart {
   timeout = 30000

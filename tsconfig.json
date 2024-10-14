@@ -1,7 +1,10 @@
 {
+  // https://www.tslang.cn/docs/handbook/compiler-options.html
   // 配置编译选项
   "compilerOptions": {
-    "target": "ESNext", // 用于指定编译之后的版本目标  如果设为 ESNEXT，则为最新 ES 规范版本
+    "declaration": true, // 设置编译时是否为每个脚本生成类型声明文件.d.ts
+    "declarationDir": "./dist/types",
+    "target": "ESNext", // 用于指定编译之后的版本目标  如果设为 ESNEXT, 则为最新 ES 规范版本
     "useDefineForClassFields": true, // class编译优化
     "module": "ESNext", // 指定要使用的模块标准
     "moduleResolution": "Node", // 模块解析策略  有 node 和 classic 两种类型
@@ -22,7 +25,7 @@
       "DOM"
     ],
     // 可以在 ts 中引入js文件 & 不报错
-    "allowJs": true, // 指定是否允许编译JS文件，默认false, 即不编译JS文件
+    "allowJs": true, // 指定是否允许编译JS文件, 默认false, 即不编译JS文件
     "noEmit": true, // 不生成编译后 输出的js文件
     "baseUrl": "./",
     // import的时候 找不到模块 @/xxx 或其相应的类型声明
@@ -47,6 +50,5 @@
     "node_modules",
     "dist",
     "**/*.js",
-    "vite.config.ts",
   ],
 }

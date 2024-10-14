@@ -1,4 +1,5 @@
 import { Heart } from './heart'
+import type { TimeoutId } from "../../types/global"
  
 interface Options {
   url: string | null // 链接的通道的地址
