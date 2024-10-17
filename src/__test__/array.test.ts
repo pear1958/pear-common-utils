@@ -1,5 +1,5 @@
-import { expect, test } from 'vitest'
+import { expect, it } from 'vitest'
 
-test('test', () => {
+it('test', () => {
   expect(typeof window).not.toBe('undefined')
 })
