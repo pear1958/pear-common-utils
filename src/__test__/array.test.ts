@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { getFlatArr, getMatchNodeList } from '@/array'
+import { getFlatArr, getMatchNodeList } from '../array'
 
 const originArr = [
   {
