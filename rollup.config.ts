@@ -13,7 +13,9 @@ export default defineConfig([
         targets: ['dist/es', 'dist/lib'], // 每次打包清空dist目录，从新生成
         watch: false,
       }),
-      typescript2(),
+      typescript2({
+        exclude: 'src/**/*test.ts',
+      }),
     ],
     output: [
       {

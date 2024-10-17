@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { debounce, delay } from '..'
+import { debounce, delay } from '@/index'
 
 describe('index-utils', () => {
   it('debounce', async () => {
