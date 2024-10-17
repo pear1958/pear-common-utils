@@ -9,7 +9,7 @@ export default defineConfig({
     },
   },
   test: {
-    environment: 'happy-dom',
+    environment: 'jsdom',
     // 启用 vitest-ui
     reporters: ['html'],
     // 在 ui 中添加 覆盖率报告 按钮

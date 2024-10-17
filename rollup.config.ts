@@ -1,12 +1,10 @@
-import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { defineConfig } from 'rollup'
 import RollupClear from 'rollup-plugin-clear'
-import typescript from 'rollup-plugin-typescript2'
+import typescript2 from 'rollup-plugin-typescript2'
 import { dts } from 'rollup-plugin-dts'
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
-export default [
+export default defineConfig([
   {
     input: './index.ts',
     external: ['jszip'],
@@ -15,28 +13,31 @@ export default [
         targets: ['dist/es', 'dist/lib'], // 每次打包清空dist目录，从新生成
         watch: false,
       }),
-      typescript(),
+      typescript2(),
     ],
     output: [
       {
         format: 'es',
         entryFileNames: '[name].js',
         preserveModules: true,
-        dir: resolve(__dirname, './dist/es'), // 配置打包根目录
+        dir: fileURLToPath(new URL('dist/es', import.meta.url)), // 配置打包根目录
         indent: false,
       },
       {
         format: 'cjs',
         entryFileNames: '[name].js',
         preserveModules: true,
-        dir: resolve(__dirname, './dist/lib'),
+        dir: fileURLToPath(new URL('dist/lib', import.meta.url)),
         indent: false,
       },
     ],
   },
   {
-    input: "./types/global.d.ts",
-    output: [{ file: "dist/es/types/global.d.ts" }, { file: "dist/lib/types/global.d.ts" }],
+    input: './types/global.d.ts',
+    output: [
+      { file: 'dist/es/types/global.d.ts' },
+      { file: 'dist/lib/types/global.d.ts' },
+    ],
     plugins: [dts()],
   },
-]
+])
