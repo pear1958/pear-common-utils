@@ -1,22 +1,22 @@
-import { deepClone } from "."
-import type { Recordable } from "../types/global"
-
-/**
- * @description 扁平化数组对象, 他的key不剔除, 只是把所有key下的元素 提到第一级来
- */
-export function getFlatArr<T = Recordable>(arr: T[], key: string = 'children'): T[] {
-  const newArr = deepClone(arr) 
-  return newArr.reduce((pre: T[], current: T) => {
-    let flatArr = [...pre, current]
-    if (current[key]) flatArr = [...flatArr, ...getFlatArr(current[key])] as T[]
-    return flatArr
-  }, [])
-}
+import { deepClone } from '.'
+import { Recordable } from '../types/global'
 
 export interface NodeItem {
   path: string
   children?: NodeItem[]
   [key: string]: any
+}
+
+/**
+ * @description 扁平化数组对象, 他的key不剔除, 只是把所有key下的元素 提到第一级来
+ */
+export function getFlatArr<T = Recordable>(arr: T[], key: string = 'children'): T[] {
+  const newArr = deepClone(arr)
+  return newArr.reduce((pre: T[], current: T) => {
+    let flatArr = [...pre, current]
+    if (current[key]) flatArr = [...flatArr, ...getFlatArr(current[key])] as T[]
+    return flatArr
+  }, [])
 }
 
 /**
@@ -33,7 +33,7 @@ export function getMatchNodeList<T extends NodeItem>(path: string, arr: T[]) {
       // 没有找到该路径, 删除对象
       matchList.pop()
     }
-    arr.forEach(item => findPath(item))
+    arr.forEach((item) => findPath(item))
   } catch (e) {
     return matchList
   }
