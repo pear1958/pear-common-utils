@@ -84,7 +84,7 @@ const expectArr = [
   },
 ]
 
-describe('数组相关', () => {
+describe('array-utils', () => {
   it('扁平化数组对象, 提取对于的 key数组 的 子元素 到第一级', () => {
     expect(getFlatArr(originArr)).toEqual(expectArr)
   })

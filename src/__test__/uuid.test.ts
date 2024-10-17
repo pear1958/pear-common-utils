@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { genUUID, genShortUUID } from '@/uuid'
 
-describe('uuid', () => {
+describe('uuid-utils', () => {
   it('生成32位的uuid', () => {
     expect(genUUID()).toHaveLength(32)
   })
