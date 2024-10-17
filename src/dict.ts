@@ -1,5 +1,5 @@
-import { isEmpty } from "./is"
-import type { LabelValue } from "../types/global"
+import { isEmpty } from '@/is'
+import type { LabelValue } from '../types/global'
 
 export interface DictItem extends LabelValue {
   cls?: string
@@ -51,4 +51,3 @@ export const getLabel = (dictList: DictItem[], val: string) =>
 // ]
 
 // getValue(testList, record.testStatus)
-

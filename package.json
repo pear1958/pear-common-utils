@@ -14,7 +14,6 @@
   },
   "types": "./dist/es/index.d.ts",
   "devDependencies": {
-    "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-typescript": "^12.1.1",
     "@types/gulp": "^4.0.17",
     "@types/jsdom": "^21.1.7",

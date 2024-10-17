@@ -1,7 +1,5 @@
-import { deepClone } from '.'
+import { deepClone } from '@/index'
 import { Recordable } from '../types/global'
-// import { deepClone } from '@/index'
-// import { Recordable } from '#/global'
 
 export interface NodeItem {
   path: string

@@ -1,5 +1,5 @@
-import { isArray, isString } from "./is"
-import type { Recordable } from "../types/global"
+import { isArray, isString } from '@/is'
+import type { Recordable } from '../types/global'
 
 /**
  * 获取浏览器默认语言
@@ -11,7 +11,7 @@ export function getBrowserLang(): 'zh' | 'en' {
 }
 
 export const delay = (waitTime: number) => {
-  return new Promise(resolve => setTimeout(resolve, waitTime))
+  return new Promise((resolve) => setTimeout(resolve, waitTime))
 }
 
 export const def = (obj: object, key: string | symbol, value: any) => {
@@ -19,7 +19,7 @@ export const def = (obj: object, key: string | symbol, value: any) => {
     writable: true,
     enumerable: true,
     configurable: true,
-    value
+    value,
   })
 }
 
@@ -51,7 +51,11 @@ export function isEqualObject(a: Recordable, b: Recordable): Boolean {
   return true
 }
 
-export function debounce<T = any>(fn: Function, delay: number = 500, immediate: boolean = false) {
+export function debounce<T = any>(
+  fn: Function,
+  delay: number = 500,
+  immediate: boolean = false
+) {
   let timer: NodeJS.Timeout | null = null
 
   return function (...args: T[]) {
@@ -185,6 +189,6 @@ export function handleProp(prop: string): string {
 }
 
 export const getValueByCasKey = <T = any>(data: Recordable, key: string) => {
-  key.split('.').forEach(key => (data = data[key]))
+  key.split('.').forEach((key) => (data = data[key]))
   return data as T
 }
